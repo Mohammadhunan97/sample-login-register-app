@@ -13,6 +13,18 @@
 
 <br/>
 <hr>
+{{#if success_msg}}
+	<p style="background: #2ecc71">{{success_msg}}</p>
+{{/if}}
+
+{{#if error_msg}}
+	<p style="background: #e74c3c">{{error_msg}}</p>
+{{/if}}
+
+{{#if error}}
+	<p style="background: #e74c3c">{{error}}</p>
+{{/if}}
+
 {{{body}}}
 <hr />
 <p style="position:absolute;bottom:40px;">Footer</p>

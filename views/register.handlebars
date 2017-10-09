@@ -1,4 +1,13 @@
 <h2 style="text-align:center">Register for the App</hr>
+<br/>
+{{#if errors}}
+	{{#each errors}}
+		<p style="background-color:#e74c3c;color:white;font-size:16px;display:inline-block;width:200px">{{msg}}</p>
+		<br/>
+	{{/each}}
+{{/if}}
+
+<br/>
 <form method="post" action="/users/register">
 	<input placeholder="Name" name="name" />
 	<br/>
